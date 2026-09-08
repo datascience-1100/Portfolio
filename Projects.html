@@ -1,149 +1,394 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Projects</title>
+		<title>Projects | Rina Mondal</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 		<style>
-			/* 1. Universal Black Theme */
-			#header h2, h4, h5, .icons li a:hover, ul.contact li:before {
-				color: #000000 !important;
+
+			/* BLUE ACCENT THEME */
+			#header h2,
+			h4,
+			.icons li a,
+			ul.contact li:before {
+				color: #2563a6 !important;
 			}
 
-			/* 2. Fix the Red Hamburger Menu Icon */
-			#sidebar .toggle:before {
-				color: #000000 !important;
-				background-color: transparent !important;
+			.icons li a:hover {
+				color: #163d6b !important;
 			}
 
-			/* 3. Remove Gaps and Lines */
+			/* REMOVE HEADER LINE */
 			#header {
 				border-bottom: none !important;
 				margin-bottom: 0 !important;
 				padding-bottom: 1em !important;
 			}
 
-			/* 4. SIDE-BY-SIDE GRID SETUP */
+			/* HIDE HAMBURGER MENU */
+			#sidebar .toggle {
+				display: none !important;
+			}
+
+			/* PROJECT GRID */
 			.projects-container {
 				display: flex;
 				flex-wrap: wrap;
-				gap: 2em; /* Space between projects */
+				gap: 2em;
 				justify-content: flex-start;
 			}
 
 			.projects-container section {
-				flex: 1 1 calc(45% - 1em); /* Two projects per row */
-				min-width: 300px; /* Prevents them from getting too squashed */
+				flex: 1 1 calc(45% - 1em);
+				min-width: 300px;
 				padding: 0 !important;
 				border-top: none !important;
 				display: flex;
 				flex-direction: column;
 			}
 
-			/* 5. Project Content Styling */
+			/* PROJECT TITLES */
 			h4 {
 				margin-bottom: 0.5em !important;
 				font-size: 1.2em !important;
+				font-weight: 700 !important;
 			}
 
+			/* PROJECT DESCRIPTION */
+			.project-description {
+				margin-bottom: 0.8em;
+			}
+
+			/* PROJECT SKILLS */
+			.project-skills {
+				font-size: 0.9em;
+				font-weight: bold;
+				color: #555555;
+				margin-bottom: 0.8em;
+			}
+
+			/* PROJECT LINKS */
+			.project-links {
+				margin-bottom: 1em;
+			}
+
+			.project-links a {
+				color: #2563a6 !important;
+				font-weight: bold;
+				text-decoration: none;
+				border-bottom: none !important;
+				margin-right: 15px;
+			}
+
+			.project-links a:hover {
+				color: #163d6b !important;
+				text-decoration: underline;
+			}
+
+			/* PROJECT IMAGES */
 			.project-image {
-				margin-top: auto; /* Pushes image to the bottom of the card if text is short */
+				margin-top: auto;
 			}
 
 			.project-image img {
 				width: 100%;
-				max-width: 100%; /* Allows image to fill the card width */
-				height: 200px; /* Fixed height for uniformity */
-				object-fit: cover; /* Crops image to fit the box nicely */
-				border-radius: 4px;
+				max-width: 100%;
+				height: 200px;
+				object-fit: cover;
+				border-radius: 6px;
 				display: block;
 				margin-top: 1em;
 			}
 
-			/* Clean up Sidebar spacing */
+			/* SIDEBAR */
 			#sidebar .inner section {
 				padding: 1.5em 0 !important;
 				border-top: none !important;
 			}
+
+			#menu ul li a:hover {
+				color: #2563a6 !important;
+			}
+
+			.contact a {
+				color: #2563a6 !important;
+			}
+
 		</style>
 	</head>
+
 	<body class="is-preload">
 
 		<div id="wrapper">
 
-				<div id="main">
-						<div class="inner">
-							<header id="header">
-									<h2>Projects</h2>
-									<ul class="icons">
-										<li><a href="https://www.linkedin.com/in/rinamondal/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://medium.com/@datasciencejourney100_83560" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									</ul>
-								</header>
+			<!-- MAIN -->
+			<div id="main">
+				<div class="inner">
 
-							<div class="projects-container">
-								
-								<section>
-									<h4>Penguin Data Set Analysis</h4>							
-									<p>This project aims to find hidden patterns in the Penguin dataset, focusing on behavior patterns to help organizations.</p>
-									
-									<div class="project-image">
-										<a href="https://github.com/datascience-1100/Finding-insights-about-Penguins">
-											<img src="Penguins.jpg" alt="Penguin Data Analysis Project">
-										</a>
-									</div>							
-								</section>
+					<!-- HEADER -->
+					<header id="header">
 
-								<section>
-									<h4>NYC Taxi Trip Duration</h4>							
-									<p>This Project predicts the total ride duration of taxi trips in New York City using regression techniques.</p>
-									
-									<div class="project-image">
-										<a href="https://github.com/datascience-1100/New-York-City-Taxi-Trip-Duration">
-											<img src="taxi.jpg" alt="New York City Taxi Project">
-										</a>
-									</div>							
-								</section>
+						<h2>Projects</h2>
 
-								<section>
-									<h4>Employee Attrition Rate</h4> 							
-									<p>Predicting whether an employee will leave the company, assisting HR in identifying high-risk factors.</p>
-									
-									<div class="project-image">
-										<a href="https://github.com/datascience-1100/End-to-End-Employee-Attrition-Rate-Project">
-											<img src="HR.jpg" alt="HR Project">
-										</a>
-									</div>							
-								</section>
+						<ul class="icons">
+
+							<li>
+								<a href="https://www.linkedin.com/in/rinamondal/"
+								   class="icon brands fa-linkedin"
+								   target="_blank"
+								   rel="noopener noreferrer">
+									<span class="label">LinkedIn</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="https://medium.com/@datasciencejourney100_83560"
+								   class="icon brands fa-medium-m"
+								   target="_blank"
+								   rel="noopener noreferrer">
+									<span class="label">Medium</span>
+								</a>
+							</li>
+
+						</ul>
+
+					</header>
+
+					<div class="projects-container">
 
 
+						<!-- PROJECT 1 -->
+						<section>
 
-							</div> </div>
+							<h4>
+								Economic Recessions and Wage Patterns of Agricultural Workers
+							</h4>
+
+							<p class="project-description">
+								Analyzed U.S. Current Population Survey microdata to examine
+								how economic recessions affected the wages of agricultural
+								workers compared with workers in other industries.
+							</p>
+
+							<p class="project-skills">
+								R | Econometrics | Fixed Effects | Regression | 15M+ Records
+							</p>
+
+							<div class="project-links">
+
+								<a href="https://datascience-1100.github.io/EconomicRecessions_and_WagePatterns_of_AgriculturalWorkersintheUnitedStates/RevisedAgricultureProject.html"
+								   target="_blank">
+									Live Report
+								</a>
+
+								<a href="https://github.com/datascience-1100/EconomicRecessions_and_WagePatterns_of_AgriculturalWorkersintheUnitedStates"
+								   target="_blank">
+									GitHub
+								</a>
+
+							</div>
+
+							<div class="project-image">
+
+								<a href="https://datascience-1100.github.io/EconomicRecessions_and_WagePatterns_of_AgriculturalWorkersintheUnitedStates/RevisedAgricultureProject.html"
+								   target="_blank">
+
+									<img src="Recession.jpg"
+										 alt="Economic Recession and Agricultural Wage Analysis">
+
+								</a>
+
+							</div>
+
+						</section>
+
+
+						<!-- PROJECT 2 -->
+						<section>
+
+							<h4>
+								Life Satisfaction: Financial Satisfaction vs Income
+							</h4>
+
+							<p class="project-description">
+								Analyzed World Values Survey data across 66 countries to study
+								whether financial satisfaction, income, health, and freedom
+								are associated with life satisfaction.
+							</p>
+
+							<p class="project-skills">
+								Python | OLS Regression | Econometrics | Fixed Effects | 91K+ Respondents
+							</p>
+
+							<div class="project-links">
+
+								<a href="https://datascience-1100.github.io/Determinants-of-Life-Satisfaction-Financial-Security-Health-Freedom-and-Income/project_life_satisfaction.html"
+								   target="_blank">
+									Live Report
+								</a>
+
+								<a href="https://github.com/datascience-1100/Determinants-of-Life-Satisfaction-Financial-Security-Health-Freedom-and-Income"
+								   target="_blank">
+									GitHub
+								</a>
+
+							</div>
+
+							<div class="project-image">
+
+								<a href="https://datascience-1100.github.io/Determinants-of-Life-Satisfaction-Financial-Security-Health-Freedom-and-Income/project_life_satisfaction.html"
+								   target="_blank">
+
+									<img src="LifeSatisfaction.jpg"
+										 alt="Life Satisfaction Analysis">
+
+								</a>
+
+							</div>
+
+						</section>
+
+
+						<!-- PROJECT 3 -->
+						<section>
+
+							<h4>
+								Employee Turnover Prediction
+							</h4>
+
+							<p class="project-description">
+								Built a machine learning model to predict employee turnover
+								and identify key drivers including workload, working hours,
+								and employee satisfaction.
+							</p>
+
+							<p class="project-skills">
+								Python | Logistic Regression | Machine Learning | EDA
+							</p>
+
+							<div class="project-links">
+
+								<a href="https://end-to-end-employee-attrition-rate-zv8f.onrender.com/"
+								   target="_blank">
+									Live App
+								</a>
+
+								<a href="https://github.com/Aranii/Data-driven-suggestions-for-HR"
+								   target="_blank">
+									GitHub
+								</a>
+
+							</div>
+
+							<div class="project-image">
+
+								<a href="https://end-to-end-employee-attrition-rate-zv8f.onrender.com/"
+								   target="_blank">
+
+									<img src="HR.jpg"
+										 alt="Employee Turnover Prediction Project">
+
+								</a>
+
+							</div>
+
+						</section>
+
+
+						<!-- PROJECT 4 -->
+						<section>
+
+							<h4>
+								NYC Taxi Trip Duration
+							</h4>
+
+							<p class="project-description">
+								Developed a regression-based analysis to predict taxi trip
+								duration in New York City using trip and transportation data.
+							</p>
+
+							<p class="project-skills">
+								Python | Regression | Predictive Analytics | Data Cleaning
+							</p>
+
+							<div class="project-links">
+
+								<a href="https://github.com/datascience-1100/New-York-City-Taxi-Trip-Duration"
+								   target="_blank">
+									GitHub
+								</a>
+
+							</div>
+
+							<div class="project-image">
+
+								<a href="https://github.com/datascience-1100/New-York-City-Taxi-Trip-Duration"
+								   target="_blank">
+
+									<img src="taxi.jpg"
+										 alt="New York City Taxi Trip Duration Project">
+
+								</a>
+
+							</div>
+
+						</section>
+
+
 					</div>
 
-				<div id="sidebar">
-						<div class="inner">
-							<nav id="menu">
-									<header class="major"></header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="Projects.html">Projects</a></li>
-										<li><a href="Blogs.html">Blogs</a></li>
-									</ul>								
-								</nav>					
-
-							<section>
-									<header class="major"></header>
-									<p>Stay Connected</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope">rinam1@protonmail.com</li>
-									</ul>
-								</section>
-						</div>
-					</div>
+				</div>
 			</div>
 
+
+			<!-- SIDEBAR -->
+			<div id="sidebar">
+
+				<div class="inner">
+
+					<nav id="menu">
+
+						<header class="major"></header>
+
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Projects.html">Projects</a></li>
+							<li><a href="Blogs.html">Technical Writing</a></li>
+						</ul>
+
+					</nav>
+
+
+					<section>
+
+						<header class="major"></header>
+
+						<p>Stay Connected</p>
+
+						<ul class="contact">
+
+							<li class="icon solid fa-envelope">
+
+								<a href="mailto:rinam1@protonmail.com">
+									rinam1@protonmail.com
+								</a>
+
+							</li>
+
+						</ul>
+
+					</section>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<!-- SCRIPTS -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
