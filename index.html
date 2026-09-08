@@ -7,8 +7,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<style>
-
-			/* NAME */
 			#header .logo strong {
 				font-size: 2em !important;
 				font-weight: 900 !important;
@@ -17,27 +15,20 @@
 				letter-spacing: 0 !important;
 			}
 
-			/* REMOVE UNWANTED LINES */
-			#banner .content p,
-			#banner .content,
-			section,
 			#header {
 				border-bottom: none !important;
-				border-top: none !important;
-				box-shadow: none !important;
+				margin-bottom: 0 !important;
+				padding-bottom: 0.5em !important;
 			}
 
-			/* HIDE HAMBURGER MENU */
 			#sidebar .toggle {
 				display: none !important;
 			}
 
-			/* SECTION HEADINGS */
-			h1, h2, h3 {
+			h2, h3 {
 				color: #2563a6 !important;
 			}
 
-			/* SOCIAL ICONS */
 			.icons li a {
 				color: #2563a6 !important;
 			}
@@ -46,56 +37,70 @@
 				color: #163d6b !important;
 			}
 
-			/* PROFILE IMAGE */
+			#banner {
+				padding-top: 1.5em !important;
+				padding-bottom: 1em !important;
+				border-bottom: none !important;
+			}
+
+			#banner .content p {
+				margin-bottom: 0.7em !important;
+				line-height: 1.55;
+			}
+
 			.image.object img {
-				width: 300px !important;
+				width: 260px !important;
 				height: auto !important;
 				border-radius: 8px;
 			}
 
-			/* SIDEBAR */
-			#sidebar .inner section {
-				border-top: none !important;
-				border-bottom: none !important;
-			}
-
-			/* SIDEBAR LINKS */
-			#menu ul li a:hover {
-				color: #2563a6 !important;
-			}
-
-			/* AWARD BOX */
 			.award-box {
 				background: #f4f8fc;
-				border-left: 5px solid #2563a6;
-				padding: 18px 22px;
-				margin-top: 25px;
-				margin-bottom: 25px;
+				border-left: 4px solid #2563a6;
+				padding: 12px 18px;
+				margin-top: 10px;
+				margin-bottom: 10px;
 				border-radius: 6px;
 			}
 
 			.award-box h3 {
-				margin-bottom: 8px;
+				margin-bottom: 4px !important;
+				font-size: 1.05em;
 			}
 
 			.award-box p {
-				margin-bottom: 0;
+				margin-bottom: 0 !important;
+				font-size: 0.95em;
 			}
 
-			/* BEYOND ANALYTICS */
 			.personal-section {
-				margin-top: 25px;
+				margin-top: 10px !important;
+				padding-top: 0 !important;
+				border-top: none !important;
 			}
 
 			.personal-section h3 {
-				margin-bottom: 10px;
+				margin-bottom: 5px !important;
+				font-size: 1.05em;
 			}
 
-			/* EMAIL */
-			.contact a {
+			.personal-section p {
+				margin-bottom: 0 !important;
+				font-size: 0.95em;
+			}
+
+			#sidebar .inner section {
+				padding: 1.2em 0 !important;
+				border-top: none !important;
+			}
+
+			#menu ul li a:hover {
 				color: #2563a6 !important;
 			}
 
+			.contact a {
+				color: #2563a6 !important;
+			}
 		</style>
 	</head>
 
@@ -103,24 +108,19 @@
 
 		<div id="wrapper">
 
-			<!-- MAIN -->
 			<div id="main">
 				<div class="inner">
 
-					<!-- HEADER -->
 					<header id="header">
-
 						<a href="index.html" class="logo">
 							<strong>Rina Mondal</strong>
 						</a>
 
 						<ul class="icons">
-
 							<li>
 								<a href="https://www.linkedin.com/in/rinamondal/"
 								   class="icon brands fa-linkedin"
-								   target="_blank"
-								   rel="noopener noreferrer">
+								   target="_blank">
 									<span class="label">LinkedIn</span>
 								</a>
 							</li>
@@ -128,17 +128,13 @@
 							<li>
 								<a href="https://medium.com/@datasciencejourney100_83560"
 								   class="icon brands fa-medium-m"
-								   target="_blank"
-								   rel="noopener noreferrer">
+								   target="_blank">
 									<span class="label">Medium</span>
 								</a>
 							</li>
-
 						</ul>
-
 					</header>
 
-					<!-- INTRODUCTION -->
 					<section id="banner">
 
 						<div class="content">
@@ -151,27 +147,37 @@
 							</p>
 
 							<p>
-								My professional experience includes banking supervision,
-								regulatory compliance, financial operations, financial
-								statement analysis, and assessment of financial and regulatory
-								data. At RBI, I worked with banking and financial institution
-								data, evaluated regulatory compliance and risk exposures,
-								and supported payment and settlement operations.
+								My experience includes banking supervision, regulatory
+								compliance, financial operations, financial statement analysis,
+								and assessment of financial and regulatory data.
 							</p>
 
 							<p>
-								Alongside my financial experience, I use Excel, Python, R,
-								SQL, Stata, econometrics, and statistical modeling to analyze
-								complex datasets and translate quantitative findings into
-								meaningful insights.
+								I use Excel, Python, R, SQL, Stata, econometrics, and
+								statistical modeling to analyze complex datasets and translate
+								quantitative findings into meaningful insights.
 							</p>
 
 							<p>
 								I am currently seeking opportunities in
-								<strong>Financial Analysis and Quantitative Analytics</strong>,
-								where I can combine my financial-sector experience with
-								quantitative and data-analysis skills.
+								<strong>Financial Analysis and Quantitative Analytics</strong>.
 							</p>
+
+							<div class="award-box">
+								<h3>🏆 Recognition</h3>
+								<p>
+									<strong>Economics Department MSQE Academic Award, 2026</strong><br>
+									University of Connecticut
+								</p>
+							</div>
+
+							<div class="personal-section">
+								<h3>Beyond Analytics</h3>
+								<p>
+									Outside of economics and quantitative analysis, I enjoy
+									<strong>drawing</strong>.
+								</p>
+							</div>
 
 						</div>
 
@@ -182,49 +188,13 @@
 
 					</section>
 
-
-					<!-- RECOGNITION -->
-					<section>
-
-						<div class="award-box">
-
-							<h3>🏆 Recognition</h3>
-
-							<p>
-								<strong>Economics Department MSQE Academic Award, 2026</strong><br>
-								University of Connecticut
-							</p>
-
-						</div>
-
-					</section>
-
-
-					<!-- BEYOND ANALYTICS -->
-					<section class="personal-section">
-
-						<h3>Beyond Analytics</h3>
-
-						<p>
-							Outside of economics and quantitative analysis, I enjoy
-							<strong>drawing</strong>. It gives me a creative space to
-							observe details and express ideas visually.
-						</p>
-
-					</section>
-
 				</div>
 			</div>
 
-
-			<!-- SIDEBAR -->
 			<div id="sidebar">
-
 				<div class="inner">
 
-					<!-- MENU -->
 					<nav id="menu">
-
 						<header class="major"></header>
 
 						<ul>
@@ -232,37 +202,27 @@
 							<li><a href="Projects.html">Projects</a></li>
 							<li><a href="Blogs.html">Technical Writing</a></li>
 						</ul>
-
 					</nav>
 
-
-					<!-- CONTACT -->
 					<section>
-
 						<header class="major"></header>
 
 						<p>Stay Connected</p>
 
 						<ul class="contact">
-
 							<li class="icon solid fa-envelope">
 								<a href="mailto:rinam1@protonmail.com">
 									rinam1@protonmail.com
 								</a>
 							</li>
-
 						</ul>
-
 					</section>
 
 				</div>
-
 			</div>
 
 		</div>
 
-
-		<!-- SCRIPTS -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
