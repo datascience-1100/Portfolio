@@ -1,395 +1,643 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Rina Mondal | Financial & Quantitative Analyst</title>
 
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Rina Mondal | Quantitative Economics & Research</title>
 
-	<link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="utf-8" />
 
-	<style>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		/* =========================
-		   BLUE PROFESSIONAL THEME
-		   ========================= */
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-		#header .logo strong {
-			font-size: 2em !important;
-			font-weight: 900 !important;
-			color: #2563a6 !important;
-			text-transform: none !important;
-			letter-spacing: 0 !important;
-		}
+    <style>
 
-		h1, h2, h3 {
-			color: #2563a6 !important;
-		}
-
-		.icons li a {
-			color: #2563a6 !important;
-		}
-
-		.icons li a:hover {
-			color: #163d6b !important;
-		}
+        :root {
+            --blue: #2563a6;
+            --darkblue: #163d6b;
+            --lightblue: #f5f8fc;
+            --textgray: #555555;
+        }
 
 
-		/* =========================
-		   HEADER
-		   ========================= */
+        /* =========================
+           HEADER
+           ========================= */
 
-		#header {
-			border-bottom: none !important;
-			margin-bottom: 0 !important;
-			padding-bottom: 0.5em !important;
-			min-height: auto !important;
-		}
+        #header {
+            border-bottom: none !important;
+            padding-bottom: 0.5em !important;
+            margin-bottom: 0 !important;
+        }
 
+        #header h1 {
+            color: var(--blue) !important;
+            font-size: 2.8em !important;
+            font-weight: 800 !important;
+            margin-bottom: 0 !important;
+        }
 
-		/* =========================
-		   REMOVE LARGE GAP
-		   ========================= */
+        .icons li a {
+            color: var(--blue) !important;
+        }
 
-		#banner {
-			min-height: 0 !important;
-			height: auto !important;
-
-			padding-top: 1.2em !important;
-			padding-bottom: 0.5em !important;
-
-			margin-top: 0 !important;
-			margin-bottom: 0 !important;
-
-			border-top: none !important;
-			border-bottom: none !important;
-
-			align-items: flex-start !important;
-		}
-
-		#banner .content {
-			padding-top: 0 !important;
-			margin-top: 0 !important;
-		}
-
-		#banner .content p {
-			margin-top: 0 !important;
-			margin-bottom: 0.8em !important;
-			line-height: 1.55 !important;
-		}
+        .icons li a:hover {
+            color: var(--darkblue) !important;
+        }
 
 
-		/* =========================
-		   PROFILE IMAGE
-		   ========================= */
+        /* HIDE HAMBURGER */
 
-		#banner .image {
-			margin-top: 0 !important;
-		}
-
-		.image.object img {
-			width: 260px !important;
-			height: auto !important;
-			border-radius: 8px;
-		}
+        #sidebar .toggle {
+            display: none !important;
+        }
 
 
-		/* =========================
-		   AWARD
-		   ========================= */
+        /* REMOVE TEMPLATE LINES */
 
-		.award-box {
-			background: #f4f8fc;
-			border-left: 4px solid #2563a6;
-
-			padding: 12px 18px;
-
-			margin-top: 12px;
-			margin-bottom: 0;
-
-			border-radius: 6px;
-		}
-
-		.award-box h3 {
-			font-size: 1.05em !important;
-			margin: 0 0 4px 0 !important;
-		}
-
-		.award-box p {
-			font-size: 0.95em !important;
-			margin: 0 !important;
-		}
+        section,
+        .major,
+        hr {
+            border-top: none !important;
+            border-bottom: none !important;
+            box-shadow: none !important;
+        }
 
 
-		/* =========================
-		   SIDEBAR
-		   ========================= */
+        /* =========================
+           MAIN BANNER
+           ========================= */
 
-		#sidebar .toggle {
-			display: none !important;
-		}
+        #banner {
+            min-height: 0 !important;
+            height: auto !important;
+            padding-top: 1em !important;
+            padding-bottom: 0.7em !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            border-top: none !important;
+            border-bottom: none !important;
+            align-items: flex-start !important;
+        }
 
-		#sidebar .inner section {
-			padding: 1.2em 0 !important;
-			border-top: none !important;
-			border-bottom: none !important;
-		}
-
-		#menu ul li a:hover {
-			color: #2563a6 !important;
-		}
-
-		.contact a {
-			color: #2563a6 !important;
-		}
+        #banner .content {
+            padding-top: 0 !important;
+            margin-top: 0 !important;
+        }
 
 
-		/* =========================
-		   MOBILE
-		   ========================= */
+        /* PROFILE IMAGE */
 
-		@media screen and (max-width: 736px) {
+        #banner .image {
+            margin-left: 2.5em;
+            margin-top: 0.3em;
+        }
 
-			#banner {
-				padding-top: 1em !important;
-			}
+        #banner .image img {
+            width: 270px;
+            max-width: 270px;
+            height: 330px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+        }
 
-			.image.object img {
-				width: 220px !important;
-			}
 
-		}
+        /* =========================
+           INTRO
+           ========================= */
 
-	</style>
+        .academic-title {
+            color: var(--blue);
+            font-size: 1.15em;
+            font-weight: 700;
+            margin-bottom: 0.8em;
+        }
+
+        .intro-text {
+            font-size: 0.98em;
+            line-height: 1.65;
+            margin-bottom: 0.8em;
+            max-width: 900px;
+        }
+
+
+        /* =========================
+           SECTION HEADINGS
+           ========================= */
+
+        .section-heading {
+            color: var(--blue) !important;
+            font-size: 1.35em !important;
+            font-weight: 800 !important;
+            margin-top: 1.2em !important;
+            margin-bottom: 0.7em !important;
+        }
+
+
+        /* =========================
+           RESEARCH INTERESTS
+           ========================= */
+
+        .interest-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6em;
+            margin-bottom: 1.2em;
+        }
+
+        .interest {
+            background: var(--lightblue);
+            border: 1px solid #d9e2ef;
+            border-radius: 20px;
+            padding: 0.45em 0.9em;
+            color: var(--darkblue);
+            font-size: 0.87em;
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           RESEARCH PROFILE
+           ========================= */
+
+        .research-profile {
+            border-left: 4px solid var(--blue);
+            background: var(--lightblue);
+            padding: 1em 1.2em;
+            margin-top: 0.5em;
+            margin-bottom: 1.5em;
+            border-radius: 4px;
+        }
+
+        .research-profile p {
+            margin-bottom: 0;
+            font-size: 0.94em;
+            line-height: 1.65;
+        }
+
+
+        /* =========================
+           HIGHLIGHTS
+           ========================= */
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+            margin-top: 1em;
+            margin-bottom: 1.5em;
+        }
+
+        .highlight-box {
+            border: 1px solid #e0e0e0;
+            border-radius: 7px;
+            background: #ffffff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .highlight-main {
+            color: var(--blue);
+            font-size: 1.18em;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 0.25em;
+        }
+
+        .highlight-sub {
+            color: var(--textgray);
+            font-size: 0.85em;
+            line-height: 1.4;
+        }
+
+
+        /* =========================
+           LINKS
+           ========================= */
+
+        .academic-links {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .academic-links a {
+            display: inline-block;
+            margin-right: 0.7em;
+            margin-bottom: 0.5em;
+            padding: 0.55em 1em;
+            border: 1px solid var(--blue);
+            border-radius: 5px;
+            color: var(--blue) !important;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: none !important;
+        }
+
+        .academic-links a:hover {
+            background: var(--blue);
+            color: #ffffff !important;
+        }
+
+
+        /* =========================
+           SIDEBAR
+           ========================= */
+
+        #sidebar .inner section {
+            padding: 1.5em 0 !important;
+            border-top: none !important;
+            border-bottom: none !important;
+        }
+
+        #menu ul li a:hover {
+            color: var(--blue) !important;
+        }
+
+        ul.contact li:before {
+            color: var(--blue) !important;
+        }
+
+        .contact a {
+            color: var(--blue) !important;
+        }
+
+
+        /* =========================
+           MOBILE
+           ========================= */
+
+        @media screen and (max-width: 850px) {
+
+            #banner {
+                display: block !important;
+            }
+
+            #banner .image {
+                margin: 1.5em 0 0 0;
+            }
+
+            #banner .image img {
+                width: 220px;
+                height: auto;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 
 <body class="is-preload">
 
-	<div id="wrapper">
+<div id="wrapper">
 
 
-		<!-- =========================
-			 MAIN CONTENT
-			 ========================= -->
+    <!-- =========================
+         MAIN
+         ========================= -->
 
-		<div id="main">
+    <div id="main">
 
-			<div class="inner">
+        <div class="inner">
 
 
-				<!-- HEADER -->
+            <!-- HEADER -->
 
-				<header id="header">
+            <header id="header">
 
-					<a href="index.html" class="logo">
-						<strong>Rina Mondal</strong>
-					</a>
+                <h1>Rina Mondal</h1>
 
+                <ul class="icons">
 
-					<ul class="icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/rinamondal/"
+                           class="icon brands fa-linkedin"
+                           target="_blank"
+                           rel="noopener noreferrer">
 
-						<li>
-							<a href="https://www.linkedin.com/in/rinamondal/"
-							   class="icon brands fa-linkedin"
-							   target="_blank"
-							   rel="noopener noreferrer">
+                            <span class="label">LinkedIn</span>
 
-								<span class="label">
-									LinkedIn
-								</span>
+                        </a>
+                    </li>
 
-							</a>
-						</li>
 
+                    <li>
+                        <a href="https://medium.com/@datasciencejourney100_83560"
+                           class="icon brands fa-medium-m"
+                           target="_blank"
+                           rel="noopener noreferrer">
 
-						<li>
-							<a href="https://medium.com/@datasciencejourney100_83560"
-							   class="icon brands fa-medium-m"
-							   target="_blank"
-							   rel="noopener noreferrer">
+                            <span class="label">Medium</span>
 
-								<span class="label">
-									Medium
-								</span>
+                        </a>
+                    </li>
 
-							</a>
-						</li>
+                </ul>
 
-					</ul>
+            </header>
 
-				</header>
 
 
-				<!-- =========================
-					 PROFESSIONAL INTRODUCTION
-					 ========================= -->
+            <!-- =========================
+                 BANNER
+                 ========================= -->
 
-				<section id="banner">
+            <section id="banner">
 
 
-					<div class="content">
+                <div class="content">
 
 
-						<p>
-							I am a Master of Science in Quantitative Economics (MSQE)
-							student at the University of Connecticut with 8+ years of
-							professional experience at the Reserve Bank of India,
-							India's central bank.
-						</p>
+                    <p class="academic-title">
+                        Quantitative Economics | Econometrics | Applied Research
+                    </p>
 
 
-						<p>
-							My professional experience includes banking supervision,
-							regulatory compliance, financial operations, financial
-							statement analysis, and assessment of financial and
-							regulatory data.
-						</p>
+                    <p class="intro-text">
 
+                        I am a Master of Science in Quantitative Economics student
+                        at the University of Connecticut with a strong interest in
+                        empirical economic research, econometrics, and quantitative
+                        analysis.
 
-						<p>
-							Alongside my financial experience, I use Excel, Python,
-							R, SQL, Stata, econometrics, and statistical modeling
-							to analyze complex datasets and translate quantitative
-							findings into meaningful insights.
-						</p>
+                    </p>
 
 
-						<p>
-							I am currently seeking opportunities in
-							<strong>
-								Financial Analysis and Quantitative Analytics
-							</strong>.
-						</p>
+                    <p class="intro-text">
 
+                        My research uses large-scale survey and microdata,
+                        econometric methods, and statistical modeling to examine
+                        economically meaningful and policy-relevant questions.
+                        My recent work includes studying wage responses to economic
+                        recessions and investigating the relationship between
+                        financial satisfaction, income, and individual well-being.
 
-						<!-- AWARD -->
+                    </p>
 
-						<div class="award-box">
 
-							<h3>
-								🏆 Recognition
-							</h3>
+                    <p class="intro-text">
 
-							<p>
-								<strong>
-									Economics Department MSQE Academic Award, 2026 - Nominated by Faculty Members
-								</strong>
-								<br>
-								University of Connecticut
-							</p>
+                        Before beginning my graduate studies, I spent more than
+                        eight years at the Reserve Bank of India, where my work
+                        included banking supervision, regulatory compliance,
+                        financial operations, and analysis of financial and
+                        regulatory information. This experience continues to shape
+                        my interest in applied economic and financial research.
 
-						</div>
+                    </p>
 
 
-					</div>
 
+                    <!-- RESEARCH INTERESTS -->
 
-					<!-- PROFILE IMAGE -->
+                    <h2 class="section-heading">
+                        Research Interests
+                    </h2>
 
-					<span class="image object">
 
-						<img
-							src="Passport image with white background.jpg"
-							alt="Rina Mondal"
-						/>
+                    <div class="interest-container">
 
-					</span>
+                        <span class="interest">
+                            Applied Microeconomics
+                        </span>
 
+                        <span class="interest">
+                            Labor Economics
+                        </span>
 
-				</section>
+                        <span class="interest">
+                            Financial Economics
+                        </span>
 
+                        <span class="interest">
+                            Econometrics
+                        </span>
 
-			</div>
+                        <span class="interest">
+                            Economic Inequality & Well-Being
+                        </span>
 
-		</div>
+                        <span class="interest">
+                            Banking & Financial Regulation
+                        </span>
 
+                    </div>
 
 
-		<!-- =========================
-			 SIDEBAR
-			 ========================= -->
 
-		<div id="sidebar">
+                    <!-- NAVIGATION BUTTONS -->
 
-			<div class="inner">
+                    <div class="academic-links">
 
+                        <a href="Projects.html">
+                            Research & Projects
+                        </a>
 
-				<!-- NAVIGATION -->
+                        <a href="Experience.html">
+                            Experience & Skills
+                        </a>
 
-				<nav id="menu">
+                        <a href="Blogs.html">
+                            Technical Writing
+                        </a>
 
-					<header class="major"></header>
+                    </div>
 
-					<ul>
 
-						<li>
-							<a href="index.html">
-								Home
-							</a>
-						</li>
+                </div>
 
-						<li>
-							<a href="Projects.html">
-								Projects
-							</a>
-						</li>
 
-						<li>
-							<a href="Blogs.html">
-								Technical Writing
-							</a>
-						</li>
 
-					</ul>
+                <!-- =========================
+                     NEW PROFILE IMAGE
+                     ========================= -->
 
-				</nav>
+                <span class="image object">
 
+                    <img src="IMG-20260325-WA0070.jpg"
+                         alt="Rina Mondal" />
 
+                </span>
 
-				<!-- CONTACT -->
 
-				<section>
+            </section>
 
-					<header class="major"></header>
 
-					<p>
-						Stay Connected
-					</p>
 
-					<ul class="contact">
+            <!-- =========================
+                 ACADEMIC HIGHLIGHTS
+                 ========================= -->
 
-						<li class="icon solid fa-envelope">
+            <div class="highlights">
 
-							<a href="mailto:rinam1@protonmail.com">
-								rinam1@protonmail.com
-							</a>
 
-						</li>
+                <div class="highlight-box">
 
-					</ul>
+                    <span class="highlight-main">
+                        3.95 / 4.00
+                    </span>
 
-				</section>
+                    <span class="highlight-sub">
+                        M.S. Quantitative Economics GPA
+                    </span>
 
+                </div>
 
-			</div>
 
-		</div>
+                <div class="highlight-box">
 
+                    <span class="highlight-main">
+                        MSQE Academic Award
+                    </span>
 
-	</div>
+                    <span class="highlight-sub">
+                        UConn Economics Department, 2026
+                    </span>
 
+                </div>
 
 
-	<!-- =========================
-		 SCRIPTS
-		 ========================= -->
+                <div class="highlight-box">
 
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+                    <span class="highlight-main">
+                        8+ Years
+                    </span>
+
+                    <span class="highlight-sub">
+                        Reserve Bank of India
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 RESEARCH PROFILE
+                 ========================= -->
+
+            <h2 class="section-heading">
+                Research Profile
+            </h2>
+
+
+            <div class="research-profile">
+
+                <p>
+
+                    My quantitative training includes econometrics,
+                    applied econometrics, mathematical economics,
+                    panel data methods, machine learning, and programming
+                    in R and Python. I am particularly interested in empirical
+                    research that combines rigorous quantitative methods with
+                    large administrative or survey datasets to study economic
+                    behavior, labor-market outcomes, financial conditions,
+                    and policy-relevant questions.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         SIDEBAR
+         ========================= -->
+
+    <div id="sidebar">
+
+        <div class="inner">
+
+
+            <nav id="menu">
+
+                <header class="major"></header>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Experience.html">
+                            Experience & Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Projects.html">
+                            Research & Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Blogs.html">
+                            Technical Writing
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <section>
+
+                <header class="major"></header>
+
+                <p>
+                    Stay Connected
+                </p>
+
+                <ul class="contact">
+
+                    <li class="icon solid fa-envelope">
+
+                        <a href="mailto:rinam1@protonmail.com">
+                            rinam1@protonmail.com
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- SCRIPTS -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 
 </body>
