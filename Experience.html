@@ -1,1 +1,705 @@
 
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Experience & Skills | Rina Mondal</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+
+        /* ==============================
+           BLUE PROFESSIONAL THEME
+           ============================== */
+
+        #header h2,
+        .section-title,
+        .experience-title,
+        .skill-category h3,
+        .icons li a,
+        ul.contact li:before {
+            color: #2563a6 !important;
+        }
+
+        .icons li a:hover {
+            color: #163d6b !important;
+        }
+
+
+        /* HEADER */
+
+        #header {
+            border-bottom: none !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0.8em !important;
+        }
+
+        #header h2 {
+            font-size: 2.1em !important;
+            font-weight: 800 !important;
+            margin-bottom: 0 !important;
+        }
+
+
+        /* HIDE HAMBURGER */
+
+        #sidebar .toggle {
+            display: none !important;
+        }
+
+
+        /* REMOVE TEMPLATE LINES */
+
+        section,
+        .major,
+        hr {
+            border-top: none !important;
+            border-bottom: none !important;
+            box-shadow: none !important;
+        }
+
+
+        /* INTRO */
+
+        .intro {
+            max-width: 950px;
+            margin-top: 1em;
+            margin-bottom: 1.5em;
+            font-size: 0.98em;
+            line-height: 1.6;
+        }
+
+
+        /* ==============================
+           HIGHLIGHT BOXES
+           ============================== */
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+            margin-bottom: 2em;
+        }
+
+        .highlight-box {
+            border: 1px solid #e3e3e3;
+            border-radius: 8px;
+            padding: 1em;
+            text-align: center;
+            background: #ffffff;
+        }
+
+        .highlight-number {
+            display: block;
+            color: #2563a6;
+            font-size: 1.35em;
+            font-weight: 800;
+            margin-bottom: 0.2em;
+        }
+
+        .highlight-text {
+            font-size: 0.87em;
+            color: #555555;
+            line-height: 1.4;
+        }
+
+
+        /* SECTION TITLES */
+
+        .section-title {
+            font-size: 1.45em !important;
+            font-weight: 800 !important;
+            margin-top: 1em !important;
+            margin-bottom: 0.8em !important;
+        }
+
+
+        /* ==============================
+           EXPERIENCE
+           ============================== */
+
+        .experience-card {
+            border: 1px solid #e3e3e3 !important;
+            border-radius: 8px;
+            padding: 1.4em;
+            margin-bottom: 2em;
+            background: #ffffff;
+        }
+
+        .experience-title {
+            font-size: 1.25em !important;
+            font-weight: 700 !important;
+            margin-bottom: 0.2em !important;
+        }
+
+        .experience-role {
+            font-weight: 700;
+            margin-bottom: 0.15em;
+        }
+
+        .experience-date {
+            color: #666666;
+            font-size: 0.9em;
+            margin-bottom: 1em;
+        }
+
+        .experience-card ul {
+            margin-bottom: 0;
+        }
+
+        .experience-card li {
+            font-size: 0.94em;
+            line-height: 1.55;
+            margin-bottom: 0.45em;
+        }
+
+
+        /* ==============================
+           SKILLS
+           ============================== */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2em;
+            margin-bottom: 2em;
+        }
+
+        .skill-category {
+            border: 1px solid #e3e3e3;
+            border-radius: 8px;
+            padding: 1.2em;
+            background: #ffffff;
+        }
+
+        .skill-category h3 {
+            font-size: 1.05em !important;
+            font-weight: 700 !important;
+            margin-bottom: 0.6em !important;
+        }
+
+        .skill-category p {
+            font-size: 0.91em;
+            line-height: 1.65;
+            margin-bottom: 0;
+        }
+
+
+        /* ==============================
+           EDUCATION
+           ============================== */
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2em;
+            margin-bottom: 1.5em;
+        }
+
+        .education-card {
+            border: 1px solid #e3e3e3;
+            border-radius: 8px;
+            padding: 1.2em;
+            background: #ffffff;
+        }
+
+        .education-card h3 {
+            color: #2563a6 !important;
+            font-size: 1.05em !important;
+            font-weight: 700 !important;
+            margin-bottom: 0.4em !important;
+        }
+
+        .education-card p {
+            font-size: 0.91em;
+            line-height: 1.55;
+            margin-bottom: 0.2em;
+        }
+
+
+        /* AWARD */
+
+        .award-box {
+            border-left: 4px solid #2563a6;
+            padding: 0.9em 1.2em;
+            margin-top: 1em;
+            margin-bottom: 2em;
+            background: #f7f9fc;
+            border-radius: 4px;
+        }
+
+        .award-box strong {
+            color: #2563a6;
+        }
+
+
+        /* SIDEBAR */
+
+        #sidebar .inner section {
+            padding: 1.5em 0 !important;
+            border-top: none !important;
+            border-bottom: none !important;
+        }
+
+        #menu ul li a:hover {
+            color: #2563a6 !important;
+        }
+
+        .contact a {
+            color: #2563a6 !important;
+        }
+
+
+        /* MOBILE */
+
+        @media screen and (max-width: 850px) {
+
+            .highlights,
+            .skills-grid,
+            .education-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body class="is-preload">
+
+<div id="wrapper">
+
+
+    <!-- ==============================
+         MAIN
+         ============================== -->
+
+    <div id="main">
+
+        <div class="inner">
+
+
+            <!-- HEADER -->
+
+            <header id="header">
+
+                <h2>Experience & Skills</h2>
+
+                <ul class="icons">
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/rinamondal/"
+                           class="icon brands fa-linkedin"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <span class="label">LinkedIn</span>
+
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="https://medium.com/@datasciencejourney100_83560"
+                           class="icon brands fa-medium-m"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <span class="label">Medium</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </header>
+
+
+            <!-- INTRODUCTION -->
+
+            <p class="intro">
+                My background combines central banking experience with quantitative
+                economics and data analytics. I bring more than eight years of
+                professional experience at the Reserve Bank of India, along with
+                graduate-level training in econometrics, statistical analysis,
+                programming, and quantitative research.
+            </p>
+
+
+            <!-- ==============================
+                 QUICK HIGHLIGHTS
+                 ============================== -->
+
+            <div class="highlights">
+
+                <div class="highlight-box">
+                    <span class="highlight-number">8+ Years</span>
+                    <span class="highlight-text">
+                        Central Banking Experience
+                    </span>
+                </div>
+
+                <div class="highlight-box">
+                    <span class="highlight-number">3.95 / 4.00</span>
+                    <span class="highlight-text">
+                        M.S. Quantitative Economics GPA
+                    </span>
+                </div>
+
+                <div class="highlight-box">
+                    <span class="highlight-number">2026</span>
+                    <span class="highlight-text">
+                        UConn MSQE Academic Award
+                    </span>
+                </div>
+
+            </div>
+
+
+
+            <!-- ==============================
+                 PROFESSIONAL EXPERIENCE
+                 ============================== -->
+
+            <h2 class="section-title">
+                Professional Experience
+            </h2>
+
+
+            <section class="experience-card">
+
+                <h3 class="experience-title">
+                    Reserve Bank of India
+                </h3>
+
+                <p class="experience-role">
+                    Senior Assistant
+                </p>
+
+                <p class="experience-date">
+                    February 2015 – September 2023
+                </p>
+
+                <ul>
+
+                    <li>
+                        Supported banking supervision and regulatory compliance
+                        activities through analysis of financial and regulatory
+                        information.
+                    </li>
+
+                    <li>
+                        Reviewed financial statements, operational information,
+                        and risk exposures to support regulatory and supervisory
+                        processes.
+                    </li>
+
+                    <li>
+                        Worked with financial operations, including payment and
+                        settlement activities, records, and reconciliation-related
+                        processes.
+                    </li>
+
+                    <li>
+                        Supported implementation and communication of regulatory
+                        requirements, circulars, and compliance-related matters.
+                    </li>
+
+                    <li>
+                        Analyzed financial and operational information and
+                        contributed to regulatory reports, official correspondence,
+                        and data-driven decision support.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!-- ==============================
+                 SKILLS
+                 ============================== -->
+
+            <h2 class="section-title">
+                Skills
+            </h2>
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-category">
+
+                    <h3>
+                        Financial & Economic Analysis
+                    </h3>
+
+                    <p>
+                        Financial Statement Analysis · Banking Supervision ·
+                        Regulatory Compliance · Econometrics · Regression Analysis ·
+                        Causal Inference · Quantitative Research
+                    </p>
+
+                </div>
+
+
+                <div class="skill-category">
+
+                    <h3>
+                        Programming & Data
+                    </h3>
+
+                    <p>
+                        Python · R · SQL · Stata · Jupyter ·
+                        Data Cleaning · Data Transformation
+                    </p>
+
+                </div>
+
+
+                <div class="skill-category">
+
+                    <h3>
+                        Statistical & Analytical Methods
+                    </h3>
+
+                    <p>
+                        Statistical Modeling · Machine Learning ·
+                        Exploratory Data Analysis · Fixed Effects ·
+                        Hypothesis Testing · Data Visualization
+                    </p>
+
+                </div>
+
+
+                <div class="skill-category">
+
+                    <h3>
+                        Business & Reporting Tools
+                    </h3>
+
+                    <p>
+                        Advanced Excel · Tableau · Microsoft Office ·
+                        Financial Reporting · Regulatory Documentation ·
+                        Technical Writing
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ==============================
+                 EDUCATION
+                 ============================== -->
+
+            <h2 class="section-title">
+                Education
+            </h2>
+
+
+            <div class="education-grid">
+
+
+                <div class="education-card">
+
+                    <h3>
+                        University of Connecticut
+                    </h3>
+
+                    <p>
+                        <strong>M.S. Quantitative Economics</strong>
+                    </p>
+
+                    <p>
+                        Expected December 2026
+                    </p>
+
+                    <p>
+                        GPA: 3.95 / 4.00
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <h3>
+                        Indira Gandhi National Open University
+                    </h3>
+
+                    <p>
+                        <strong>M.A. Economics</strong>
+                    </p>
+
+                    <p>
+                        2019
+                    </p>
+
+                    <p>
+                        GPA: 4.00 / 4.00
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <h3>
+                        Bengal Institute of Technology
+                    </h3>
+
+                    <p>
+                        <strong>B.Tech Computer Science</strong>
+                    </p>
+
+                    <p>
+                        2013
+                    </p>
+
+                    <p>
+                        GPA: 3.76 / 4.00
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <h3>
+                        Areas of Study
+                    </h3>
+
+                    <p>
+                        Econometrics · Applied Econometrics ·
+                        Mathematical Economics · Machine Learning ·
+                        Panel Data Econometrics · Programming & Computation
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ==============================
+                 RECOGNITION
+                 ============================== -->
+
+            <h2 class="section-title">
+                Recognition
+            </h2>
+
+
+            <div class="award-box">
+
+                <strong>
+                    🏆 Economics Department MSQE Academic Award, 2026
+                </strong>
+
+                <br>
+
+                University of Connecticut
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==============================
+         SIDEBAR
+         ============================== -->
+
+    <div id="sidebar">
+
+        <div class="inner">
+
+
+            <!-- MENU -->
+
+            <nav id="menu">
+
+                <header class="major"></header>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="Experience.html">Experience & Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="Projects.html">Research & Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="Blogs.html">Technical Writing</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <!-- CONTACT -->
+
+            <section>
+
+                <header class="major"></header>
+
+                <p>Stay Connected</p>
+
+                <ul class="contact">
+
+                    <li class="icon solid fa-envelope">
+
+                        <a href="mailto:rinam1@protonmail.com">
+                            rinam1@protonmail.com
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- ==============================
+     SCRIPTS
+     ============================== -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
