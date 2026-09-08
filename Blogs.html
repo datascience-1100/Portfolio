@@ -1,153 +1,459 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>MyBlogs</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-			/* 1. MAKE MAIN TITLE LARGE AND BOLD */
-			#header h2 {
-				font-size: 2em !important;
-				font-weight: 900 !important;
-				color: #000000 !important;
-				border-bottom: none !important;
-				margin-bottom: 0 !important;
+<head>
+	<title>Technical Writing | Rina Mondal</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<style>
+
+		/* ==============================
+		   BLUE PROFESSIONAL THEME
+		   ============================== */
+
+		#header h2,
+		.blog-title,
+		.icons li a,
+		ul.contact li:before {
+			color: #2563a6 !important;
+		}
+
+		.icons li a:hover {
+			color: #163d6b !important;
+		}
+
+
+		/* HEADER */
+
+		#header {
+			border-bottom: none !important;
+			margin-bottom: 0 !important;
+			padding-bottom: 0.8em !important;
+		}
+
+		#header h2 {
+			font-size: 2.1em !important;
+			font-weight: 800 !important;
+			margin-bottom: 0 !important;
+		}
+
+
+		/* HIDE HAMBURGER */
+
+		#sidebar .toggle {
+			display: none !important;
+		}
+
+
+		/* REMOVE TEMPLATE LINES */
+
+		section,
+		.major,
+		hr {
+			border-top: none !important;
+			border-bottom: none !important;
+			box-shadow: none !important;
+		}
+
+
+		/* INTRO */
+
+		.blog-intro {
+			max-width: 900px;
+			font-size: 0.98em;
+			line-height: 1.6;
+			margin-top: 1em;
+			margin-bottom: 1.7em;
+		}
+
+
+		/* ==============================
+		   BLOG GRID
+		   ============================== */
+
+		.blog-container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.5em;
+			margin-top: 1em;
+		}
+
+
+		/* BLOG CARD */
+
+		.blog-card {
+			padding: 1.3em;
+			border: 1px solid #e3e3e3 !important;
+			border-radius: 8px;
+			background: #ffffff;
+		}
+
+
+		/* BLOG TITLE */
+
+		.blog-title {
+			font-size: 1.2em !important;
+			font-weight: 700 !important;
+			line-height: 1.35;
+			margin-bottom: 0.5em !important;
+		}
+
+
+		/* BLOG DESCRIPTION */
+
+		.blog-description {
+			font-size: 0.93em;
+			line-height: 1.55;
+			margin-bottom: 0.8em;
+		}
+
+
+		/* LINK */
+
+		.blog-link {
+			color: #2563a6 !important;
+			font-weight: 700;
+			text-decoration: none;
+			border-bottom: none !important;
+		}
+
+		.blog-link:hover {
+			color: #163d6b !important;
+			text-decoration: underline;
+		}
+
+
+		/* SIDEBAR */
+
+		#sidebar .inner section {
+			padding: 1.5em 0 !important;
+			border-top: none !important;
+			border-bottom: none !important;
+		}
+
+		#menu ul li a:hover {
+			color: #2563a6 !important;
+		}
+
+		.contact a {
+			color: #2563a6 !important;
+		}
+
+
+		/* MOBILE */
+
+		@media screen and (max-width: 850px) {
+
+			.blog-container {
+				grid-template-columns: 1fr;
 			}
+		}
 
-			/* 2. REMOVE ALL DOTS AND LINES */
-			#header, section, .major, hr, p {
-				border-bottom: none !important;
-				border-top: none !important;
-				box-shadow: none !important;
-			}
+	</style>
+</head>
 
-			/* 3. HIDE THE HAMBURGER MENU COMPLETELY */
-			#sidebar .toggle {
-				display: none !important;
-			}
 
-			/* 4. BLACK THEME FOR EVERYTHING */
-			h1, h2, h3, h4, h5, h6, 
-			.icons li a:hover, 
-			ul.contact li:before,
-			#main .inner a {
-				color: #000000 !important;
-			}
+<body class="is-preload">
 
-			/* 5. STYLE BLOG TITLES (LINKS) */
-			#main .inner section a h2 {
-				font-size: 1.5em !important;
-				text-decoration: underline !important;
-				margin-bottom: 0.5em !important;
-				display: inline-block;
-			}
+<div id="wrapper">
 
-			/* Remove red from sidebar icons and links */
-			#sidebar ul li a:hover {
-				color: #000000 !important;
-			}
 
-			/* Tighten spacing */
-			#header {
-				padding-bottom: 1.5em !important;
-			}
-			section {
-				padding-top: 1em !important;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+	<!-- ==============================
+	     MAIN
+	     ============================== -->
 
-		<div id="wrapper">
+	<div id="main">
 
-				<div id="main">
-						<div class="inner">
+		<div class="inner">
 
-							<header id="header">
-									<h2>My Blogs</h2>
-									<ul class="icons">
-										<li><a href="https://www.linkedin.com/in/rinamondal/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://medium.com/@datasciencejourney100_83560" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									</ul>
-								</header>
 
-							<section>
-									<p>Reading and writing are my passions, providing personal and professional growth. Reading broadens perspectives and fosters critical thinking, while writing enhances communication, creativity, and self-reflection.</p>
-																		
-									<br>
+			<!-- HEADER -->
 
-									<a href="https://medium.com/@datasciencejourney100_83560/list/python-c8b497cd4819">
-										<h2>Paths to Python Mastery</h2>
-									</a>
-									<p>A guide to learning Python, an essential requirement for aspiring data professionals and Data Scientists.</p>
-									
-									<br>
+			<header id="header">
 
-									<a href="https://medium.com/@datasciencejourney100_83560/list/python-libraries-72aec4b3cc49">
-										<h2>Learn the Libraries of Python</h2>
-									</a>
-									<p>Insights on using Python libraries to streamline workflows in Data Science projects.</p>
+				<h2>Technical Writing</h2>
 
-									<br>
+				<ul class="icons">
 
-									<a href="https://medium.com/@datasciencejourney100_83560/list/r-programming-8e9db588a85a">
-										<h2>Read R</h2>
-									</a>
-									<p>Simplifying R for data analysis, exploration, and visualization to uncover meaningful insights.</p>
+					<li>
+						<a href="https://www.linkedin.com/in/rinamondal/"
+						   class="icon brands fa-linkedin"
+						   target="_blank"
+						   rel="noopener noreferrer">
 
-									<br>
+							<span class="label">LinkedIn</span>
 
-									<a href="https://medium.com/@datasciencejourney100_83560/list/machine-learning-719286e0b12e">
-										<h2>Master Machine Learning</h2>
-									</a>
-									<p>Study materials designed to elucidate intricate Machine Learning concepts in a straightforward manner.</p>
+						</a>
+					</li>
 
-									<br>
 
-									<a href="https://medium.com/@datasciencejourney100_83560/list/statistics-c42a82d2d5b4">
-										<h2>Study About Statistics</h2>
-									</a>
-									<p>Extract actionable insights by mastering the backbone of predictions and data analysis.</p>
+					<li>
+						<a href="https://medium.com/@datasciencejourney100_83560"
+						   class="icon brands fa-medium-m"
+						   target="_blank"
+						   rel="noopener noreferrer">
 
-									<br>
+							<span class="label">Medium</span>
 
-									<a href="https://medium.com/@datasciencejourney100_83560/list/exploratory-data-analysis-5e3f84e28e3b">
-										<h2>Exploratory Data Analysis</h2>
-									</a>
-									<p>Understand your data by uncovering patterns and revealing hidden relationships.</p>
+						</a>
+					</li>
 
-								</section>
-						</div>
-					</div>
+				</ul>
 
-				<div id="sidebar">
-						<div class="inner">
-							<nav id="menu">
-									<header class="major"></header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="Projects.html">Projects</a></li>
-										<li><a href="Blogs.html">Blogs</a></li>
-									</ul>
-								</nav>
+			</header>
 
-							<section>
-									<header class="major"></header>
-									<p>Stay Connected</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope">rinam1@protonmail.com</li>
-									</ul>
-								</section>
-						</div>
-					</div>
+
+
+			<!-- INTRO -->
+
+			<p class="blog-intro">
+				I write about Python, R, statistics, machine learning, and data analysis,
+				with a focus on explaining technical concepts in a clear and accessible way.
+				My writing reflects my ongoing learning in quantitative economics,
+				econometrics, and applied data analytics.
+			</p>
+
+
+
+			<!-- ==============================
+			     BLOG GRID
+			     ============================== -->
+
+			<div class="blog-container">
+
+
+				<!-- BLOG 1 -->
+
+				<section class="blog-card">
+
+					<h3 class="blog-title">
+						Paths to Python Mastery
+					</h3>
+
+					<p class="blog-description">
+						A collection of articles on learning Python fundamentals
+						and building practical skills for data analysis and analytics.
+					</p>
+
+					<a class="blog-link"
+					   href="https://medium.com/@datasciencejourney100_83560/list/python-c8b497cd4819"
+					   target="_blank"
+					   rel="noopener noreferrer">
+						Read on Medium →
+					</a>
+
+				</section>
+
+
+
+				<!-- BLOG 2 -->
+
+				<section class="blog-card">
+
+					<h3 class="blog-title">
+						Learn the Libraries of Python
+					</h3>
+
+					<p class="blog-description">
+						Articles exploring commonly used Python libraries and how
+						they can simplify data manipulation, analysis, and visualization.
+					</p>
+
+					<a class="blog-link"
+					   href="https://medium.com/@datasciencejourney100_83560/list/python-libraries-72aec4b3cc49"
+					   target="_blank"
+					   rel="noopener noreferrer">
+						Read on Medium →
+					</a>
+
+				</section>
+
+
+
+				<!-- BLOG 3 -->
+
+				<section class="blog-card">
+
+					<h3 class="blog-title">
+						Read R
+					</h3>
+
+					<p class="blog-description">
+						Practical explanations of R programming for data cleaning,
+						exploration, visualization, and statistical analysis.
+					</p>
+
+					<a class="blog-link"
+					   href="https://medium.com/@datasciencejourney100_83560/list/r-programming-8e9db588a85a"
+					   target="_blank"
+					   rel="noopener noreferrer">
+						Read on Medium →
+					</a>
+
+				</section>
+
+
+
+				<!-- BLOG 4 -->
+
+				<section class="blog-card">
+
+					<h3 class="blog-title">
+						Master Machine Learning
+					</h3>
+
+					<p class="blog-description">
+						Study notes and explanations designed to make core machine
+						learning concepts easier to understand and apply.
+					</p>
+
+					<a class="blog-link"
+					   href="https://medium.com/@datasciencejourney100_83560/list/machine-learning-719286e0b12e"
+					   target="_blank"
+					   rel="noopener noreferrer">
+						Read on Medium →
+					</a>
+
+				</section>
+
+
+
+				<!-- BLOG 5 -->
+
+				<section class="blog-card">
+
+					<h3 class="blog-title">
+						Study About Statistics
+					</h3>
+
+					<p class="blog-description">
+						Articles covering statistical concepts used in quantitative
+						analysis, inference, prediction, and data-driven decision making.
+					</p>
+
+					<a class="blog-link"
+					   href="https://medium.com/@datasciencejourney100_83560/list/statistics-c42a82d2d5b4"
+					   target="_blank"
+					   rel="noopener noreferrer">
+						Read on Medium →
+					</a>
+
+				</section>
+
+
+
+				<!-- BLOG 6 -->
+
+				<section class="blog-card">
+
+					<h3 class="blog-title">
+						Exploratory Data Analysis
+					</h3>
+
+					<p class="blog-description">
+						A practical introduction to exploring datasets, identifying
+						patterns, detecting relationships, and understanding data
+						before statistical modeling.
+					</p>
+
+					<a class="blog-link"
+					   href="https://medium.com/@datasciencejourney100_83560/list/exploratory-data-analysis-5e3f84e28e3b"
+					   target="_blank"
+					   rel="noopener noreferrer">
+						Read on Medium →
+					</a>
+
+				</section>
+
+
 			</div>
 
-		<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		</div>
 
-	</body>
+	</div>
+
+
+
+	<!-- ==============================
+	     SIDEBAR
+	     ============================== -->
+
+	<div id="sidebar">
+
+		<div class="inner">
+
+
+			<!-- MENU -->
+
+			<nav id="menu">
+
+				<header class="major"></header>
+
+				<ul>
+
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+
+					<li>
+						<a href="Projects.html">Research & Projects</a>
+					</li>
+
+					<li>
+						<a href="Blogs.html">Technical Writing</a>
+					</li>
+
+				</ul>
+
+			</nav>
+
+
+
+			<!-- CONTACT -->
+
+			<section>
+
+				<header class="major"></header>
+
+				<p>Stay Connected</p>
+
+				<ul class="contact">
+
+					<li class="icon solid fa-envelope">
+
+						<a href="mailto:rinam1@protonmail.com">
+							rinam1@protonmail.com
+						</a>
+
+					</li>
+
+				</ul>
+
+			</section>
+
+
+		</div>
+
+	</div>
+
+
+</div>
+
+
+
+<!-- ==============================
+     SCRIPTS
+     ============================== -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+</body>
 </html>
